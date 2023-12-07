@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before{
+     
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+     
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    color: white;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+.heading{
+     
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 20px;
+    
+}
+
+.btn-group{
+     
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.btn1,.btn2 { 
+     
+     /* all:unset; */
+     background-color: transparent;
+     cursor: pointer;
+     font-size: 1rem;
+     letter-spacing: 1.75px;
+     color: white;
+     padding: 5px 8px;
+     border: none;
+}
+
+.weatherInfo{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.btn{
+    
+    all: unset;
+    text-transform: uppercase;
+    font-size: 0.85rem ;
+    border-radius: 5px;
+    background-color:  lightblue;
+    cursor: pointer;
+    padding: 10px 30px ;
+}
+
+.UserWeather{
+     
+    display: none;
+}
+
+.sub-container{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grant-location{
+     
+    display: none;
+}
+
+.grant-location img{
+     
+    margin-bottom:  2rem ;
+}
+
+.grant-location p:first-of-type{
+
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.grant-location p:last-of-type{
+     
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-top: 0.75rem;
+      margin-bottom: 1.75rem;
+      letter-spacing: 0.75px;
+}
+
+.searchWeather{
+     
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.cityInp {
+     
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219,226,239,0.5) ;
+    border-radius: 10px ;
+}
+
+.cityInp::placeholder{
+     
+    color: rgba(255,255,255,0.7);
+}
+
+.cityInp:focus{
+     
+    outline: 3px solid rgba(255,255,255,0.7);
+}
+
+.icon-container{
+     
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f72af;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.loading-container{
+     
+    display: none;
+}
+
+.loading-container p{
+     
+    text-transform: uppercase;
+}
+
+.UserWeather{
+
+    display: none;
+    width: 100%;
+    margin-block: 4rem;
+}
+
+.headBox{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headBox .cityInfo {
+     
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cityInfo h2{
+     
+    font-size: 2rem;
+}
+
+.cityInfo img{
+     
+    max-width: 40px;
+    max-height: 30px;
+}
+
+.headBox p{
+     
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.headBox img{ 
+     
+    width: 90px;
+    height: 90px;
+}
+
+.headBox h2[data-temp]{
+     
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.moreInfo{
+     
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.infoBox{
+     
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoBox p:first-of-type{
+     
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.infoBox img{
+     
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.infoBox p:last-of-type{
+     
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.errorBox{
+     
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    margin-top: 3rem;
+}
+
+.errorImg{  
+
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.errorBox p{
+     
+    font-size: 1.6rem;
+}
+
+.clicked{
+     
+    background-color:rgba(219,226,239,0.5) ;
+    border-radius: 4px;
+}
+
+.active{
+     
+    display: flex;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One"
+    rel="stylesheet" />
+</head>
+<body>
+    
+   <div class="wrapper">
+
+    <h1 class="heading">Weather App</h1>
+
+    <div class="btn-group">
+        <button class="btn1">Your Weather</button>
+        <button class="btn2">Search Weather</button>
+       <!-- <input class="inp" type="text" placeholder="Enter City">
+       <button class="searchBtn" onclick="getData()">Search</button> -->
+    </div>
+   
+  <div class="weatherInfo">
+
+  <!--Search Weather Screen-->
+   <div class="searchWeather">
+    <input class="cityInp" autofocus="false" type="text" spellcheck="false" placeholder="Enter City">
+    <div data-searchButton class="icon-container"> <i class="fa-brands fa-searchengin"></i></div>
+  </div>
+
+    <!--Grant location screen-->
+    <div class="sub-container grant-location">
+        <img src="./assets/location.png" width="80" height="80" loading="lazy" alt="location">
+        <p>Grant Location Access</p>
+        <p data-updatePermission >Allow location access to get weather</p>
+        <button class="btn" data-grantAcess >Grant Access</button>
+    </div>
+
+    <div class="sub-container UserWeather">      
+        <div class="headBox">
+           <div class="cityInfo">
+              <h2 data-cityName>Hello Ji</h2>
+              <img data-countryImage alt="country">
+           </div>
+           <p data-weatherDesc=""></p>
+           <img data-weatherImage class="image" alt="">
+           <h2 data-temp class="temp"></h2>
+        </div>
+
+        <!-- <div class="error">Error hai Bhaiya</div> -->
+        
+        <div class="moreInfo">
+            
+           <div class="infoBox">
+               <img src="./assets/wind.png" width="80" height="80" alt="">
+               <p data-windSpeed>WINDSPEED</p>
+               <p data-windValue></p>
+           </div>
+
+           <div class="infoBox">
+               <img src="./assets/humidity.png" width="60" height="60"  alt="">
+               <p data-humidity >HUMIDITY</p>
+               <p data-humidityValue ></p>
+           </div>
+
+           <div class="infoBox">
+               <img src="./assets/cloud.png" width="80" height="80" alt="">
+               <p data-cloud >CLOUDS</p>
+               <p data-cloudiness ></p>
+           </div>
+
+        </div>
+
+   </div>
+  
+   <!--Loading Screen-->
+   <div class="sub-container loading-container">
+       <img src="./assets/loading.gif" width="150" height="150" alt="">
+       <p>Loading</p>
+   </div>
+
+   <div class="errorBox">
+    <img class="errorImg" src="./assets/not-found.png" alt="">
+    <p>City not found...</p>
+   </div>
+
+  </div>
+
+   </div>
+
+<script src="script.js"></script>   
+<script src="https://kit.fontawesome.com/663f38a730.js" crossorigin="anonymous"></script> 
+</body>
+</html>
